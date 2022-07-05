@@ -1,0 +1,43 @@
+		/*
+		Name		:Barun Neupane
+		Section:	:P
+		Group:	:1
+		Roll No:	:12
+
+		Q3. Write a program that takes your full name (First, middle and last) as input and displays the 
+		abbreviations of the first and middle names except the last name which is displayed as it is.For
+		example, if your name is Aman Singh Rawat, then the output should be A.S.Rawat.  */
+		
+		#include<stdio.h>        
+		#include<string.h>
+		int main()
+		{
+		    char str[30];
+		    int i,j,k,l;
+		    printf("\t\t\t******INTPUT******\n");
+		    printf("enter name:\n");              //format:first,middle and last.
+		    scanf("%[^\n]s",str);
+		    l=strlen(str);
+		    printf("\t\t\t******OUTPUT******\n");
+		    printf("%c.",str[0]);
+		    for(i=0;i<l;i++)
+		    {
+		        if((str[i]==' ') && (str[i+1]!=' '))
+		        {
+		            printf("%c.",str[i+1]);
+		            break;
+		        }
+		    }
+		    for(j=i+1;j<l;j++)
+		    {
+		        if((str[j]==' ') && (str[j+1]!=' '))
+		        {
+		            for(k=j+1;k<l;k++)
+		            {
+		                printf("%c",str[k]);
+		            }
+		        }
+		    }
+		    printf("\n");
+		    return 0;
+		}
