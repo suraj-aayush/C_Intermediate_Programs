@@ -1,0 +1,59 @@
+		/*
+		Name		:Barun Neupane
+		Section:	:P
+		Group:	:1
+		Roll No:	:12
+
+
+		Q4. Write a program to check if the two strings entered by user are anagrams or not. Two words 
+		are Said to be anagrams if the letters of one word can be rearranged to form the other word. 
+		For example, HEART and EARTH are anagrams of each other.  */
+
+
+		#include<stdio.h>      
+		#include<string.h>
+		void sort(char *p,int n)
+		{
+		    int i,j;
+		    char t;
+		    for(i=0;i<n-1;i++)
+		    {
+		        for(j=i+1;j<n-1;j++)
+		        {
+		            if(*(p+i)>*(p+j))
+		            {
+		               t=*(p+i);
+		               *(p+i)=*(p+j);
+		               *(p+j)=t;
+		            }
+		        }
+		    }
+		}
+		int main()
+		{
+		    int n;
+		    printf("\t\t\t******INPUT******\n");
+		    printf("enter total size of string including null:");
+		    scanf("%d",&n);
+		    char ch[n],ch1[n],*p,*q;
+		    p=ch;
+		    q=ch1;
+		    printf("enter 1st string:");
+		    scanf("\n");
+		    gets(p);
+		    printf("enter 2nd string:");
+		    scanf("\n");
+		    gets(q);
+		    sort(p,n);
+		    sort(q,n);
+		    printf("\t\t\t******OUTPUT******\n");
+		    if(strcmp(p,q)==0)
+		    {
+		        printf("given string are anagram");
+		    }
+		    else
+		    {
+		        printf("given string are not anagram");
+		    }
+		    return 0;
+		}
