@@ -1,0 +1,73 @@
+		/*
+		Name		:Barun Neupane
+		Section:	:P
+		Group:	:1
+		Roll No:	:12
+
+		Q5. WAP using dynamic memory allocation to insert elements in an array and perform the 
+		following operation.
+		i.Searching of an element.
+		ii.Replace the searched elements with its cube and print the array
+		NOTE: make 2 different user defined function to perform the operation.  */
+
+		#include<stdio.h>                   
+		#include<stdlib.h>
+		int search(int*,int,int);
+		void rcube(int*,int,int);
+		
+		int main()
+		{
+		    int *p,n,i,t,c;
+		    printf("\t\t\t******INPUT******\n");
+		    printf("enter size:");
+		    scanf("%d",&n);
+		    p=(int*)calloc(n,sizeof(int));
+		    printf("enter the elements:");
+		    for(i=0;i<n;i++)
+		    {
+		        scanf("%d",p+i);
+		    }
+		    printf("enter element to be searched:");
+		    scanf("%d",&t);
+		    printf("\t\t\t******OUTPUT******\n");
+		    c=search(p,n,t);
+		    if(c==1)
+		    {
+		        printf("the element is present.\n");
+		        rcube(p,n,t);
+		        printf("the new array is:");
+		        for(i=0;i<n;i++)
+		        {
+		            printf("%d ",*(p+i));
+		        }    
+		    }
+		    else
+		    {
+		        printf("the element is not present.\n");
+		    }
+		    return 0;
+		}
+		int search(int*p,int n,int t)
+		{
+		    int c=0;
+		    for(int i=0;i<n;i++)
+		    {
+		        if(t==*(p+i))
+		        {
+		            c=1;
+		            break;
+		        }
+		    }
+		    return c;
+		}
+		void rcube(int* p,int n,int t)
+		{
+		    int i;
+		    for(i=0;i<n;i++)
+		    {
+		        if(t==*(p+i))
+		        {
+		            *(p+i)=*(p+i)  * *(p+i) * *(p+i);
+		        }
+		    }
+		}
