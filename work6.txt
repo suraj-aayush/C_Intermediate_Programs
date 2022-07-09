@@ -1,0 +1,26 @@
+		/*
+		Name		:Barun Neupane
+		Section:	:P
+		Group:	:1
+		Roll No:	:12
+
+
+		Q6. WAP to reverse the digits of a number using pointer.  */
+
+		#include<stdio.h>        
+		int main()
+		{
+		    int n,*p,b=0;
+		    printf("\t\t\t******INPUT******");
+		    printf("\nenter a no:");
+		    scanf("%d",&n);
+		    p=&n;
+		    while(*p!=0)
+		    {
+		        b=b*10+*p%10;
+		        *p=*p/10;
+		    }
+		    printf("\t\t\t******OUTPUT******");
+		    printf("\n%d",b);
+		    return 0;
+		}
