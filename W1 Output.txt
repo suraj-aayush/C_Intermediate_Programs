@@ -1,0 +1,16 @@
+		                        ******INPUT******
+		enter main string:Barun Nne
+		enter sub string:eupa
+		enter particular position:8
+
+		                        ******OUTPUT******
+		Barun Neupane
+
+
+		                        ******INPUT******
+		enter main string:Cter Science
+		enter sub string:ompu
+		enter particular position:2
+
+		                        ******OUTPUT******
+		Computer Science
