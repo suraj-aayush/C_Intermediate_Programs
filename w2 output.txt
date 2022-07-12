@@ -1,0 +1,8 @@
+		                        ******INPUT******
+		enter no of character:6
+		Enter a string:
+		apple
+
+
+		                        ******OUTPUT******
+		ZOOKD
