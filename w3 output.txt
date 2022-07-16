@@ -1,0 +1,7 @@
+		                        ******INTPUT******
+		enter name:
+		Surya Prasad Neupane
+
+
+		                        ******OUTPUT******
+		S.P.Neupane
