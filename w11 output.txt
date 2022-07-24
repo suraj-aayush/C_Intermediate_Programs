@@ -1,0 +1,12 @@
+		                        ******INPUT******
+		Input characters in a file:
+		my name is barun neupane.i am currently studying in graphic era university with b.tech in c.s.e as major subject. 
+         
+		Content of the file are:
+		my name is barun neupane.i am currently studying in graphic era university with b.tech in c.s.e as major subject.
+
+		enter alphabet to be checked in a file:n
+
+
+		                        ******OUTPUT******
+		all positions of given alphabet are:4 16 18 23 36 47 51 66 89 
