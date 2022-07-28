@@ -8,11 +8,9 @@ int main(){
     char ch;
 
     int i,n,c=0;
-    printf("enter number of character");
-    scanf("%c",&n);
 
     p=fopen("abc.txt","w+");
-
+    printf("enter character");
 while ((ch=getchar() != EOF))
 {
     fputc(ch,p);    }
