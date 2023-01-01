@@ -1,0 +1,1 @@
+This folder contains all the program related to inheritance and virtual funcitons and other stuffs
